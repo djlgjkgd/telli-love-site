@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Для Телли</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="site" id="site">
+      <section class="intro" id="intro" aria-labelledby="introTitle">
+        <div class="intro-copy">
+          <p class="eyebrow">Для Телли</p>
+          <h1 id="introTitle">Привет, солнышко</h1>
+          <p class="intro-text">Оценишь мой 2 проект? Надеюсь, тебе понравится.</p>
+          <button class="start-button" id="startButton" type="button">
+            <span>Погнали</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="name-stage" id="nameStage" aria-labelledby="stageTitle" hidden>
+        <div class="stage-inner">
+          <p class="stage-hint" id="stageTitle">Кликай по буквам своего имени</p>
+          <div class="name-layout">
+            <nav class="letter-rail" aria-label="Буквы имени Телли"></nav>
+            <article class="compliment" aria-live="polite">
+              <p class="active-letter" id="activeLetter">Т</p>
+              <h2 id="complimentTitle"></h2>
+              <p id="complimentText"></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <div class="emoji-rain" id="emojiRain" aria-hidden="true"></div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
